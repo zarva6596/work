@@ -1,4 +1,6 @@
 .form {
+  position: relative;
+
   &__input {
     background-color: #f4f6f0;
     padding: 12px 0 12px 28px;
@@ -7,18 +9,34 @@
     line-height: 21px;
     color: #797979;
     margin-bottom: 10px;
-    position: relative;
+  }
 
-    &::before {
-      width: 15px;
-      height: 11px;
-      position: absolute;
-      left: 0;
-      top: 0;
-      content: "";
-      background-image: url("../images/icons/name.svg");
-      background-repeat: no-repeat;
-      background-position: center left;
+  &__nameL,
+  &__nameT {
+    width: 15px;
+    height: 12px;
+    background-repeat: no-repeat;
+    background-position: center left;
+    position: absolute;
+  }
+
+  &__nameL {
+    background-image: url("../images/icons/name.svg");
+    top: 16px;
+  }
+
+  &__nameT {
+    background-image: url("../images/icons/phone.svg");
+    top: 72px;
+  }
+
+  &__button {
+    color: #fff;
+    background-color: #ffa234;
+    margin-top: 38px;
+
+    &:hover {
+      color: #ffa234;
     }
   }
 }

@@ -1,19 +1,15 @@
-// .button {
-//   padding: 15px 30px;
-//   background-color: $red-color;
-//   color: $text-color;
-//   font-size: 18px;
-//   border: 1px solid $red-color;
-//   transition: all 0.5s;
+.button {
+  background-color: #f3f0eb;
+  font-size: 16px;
+  color: #ffa234;
+  border: 2px solid #f3f0eb;
+  border-radius: 5px;
+  padding: 25px 37px;
+  transition: all 0.5s;
 
-//   &:hover {
-//     cursor: pointer;
-//     color: $red-color;
-//     background-color: #fff;
-//   }
-
-//   &:active {
-//     background-color: $red-color;
-//     color: $text-color;
-//   }
-// }
+  &:hover {
+    cursor: pointer;
+    background-color: #fff;
+    border-color: #ffa234;
+  }
+}
