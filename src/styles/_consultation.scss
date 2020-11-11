@@ -1,0 +1,38 @@
+.consultation {
+  background-color: #f6f4f0;
+  display: flex;
+  justify-content: space-between;
+
+  &__heading {
+    margin-bottom: 60px;
+  }
+
+  &__text {
+    margin-bottom: 30px;
+    width: 360px;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+
+    &Box {
+      padding: 0 12px 12px 0;
+      width: 343px;
+      height: 242px;
+      border: 4px solid #ffa234;
+      border-radius: 0 5px 5px 0;
+      border-left: 0;
+
+      &Heading {
+        width: 180px;
+        font-size: 18px;
+        line-height: 24px;
+        font-weight: bold;
+        background-color: #f6f4f0;
+        position: relative;
+        top: -19px;
+      }
+    }
+  }
+}

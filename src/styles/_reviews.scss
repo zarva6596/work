@@ -1,0 +1,58 @@
+.reviews {
+  padding-right: 0;
+
+  &__slider {
+    margin-top: 60px;
+    display: flex;
+  }
+
+  &__card {
+    width: 460px;
+    height: 234px;
+    background-color: #f6f4f0;
+    margin-right: 30px;
+    border-radius: 5px;
+    padding: 24px 17px 18px 26px;
+    position: relative;
+  }
+
+  &__client {
+    display: flex;
+
+    &Info {
+      position: relative;
+      top: 10px;
+    }
+  }
+
+  &__photo {
+    border-radius: 5px;
+    margin-right: 24px;
+  }
+
+  &__name {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: bold;
+  }
+
+  &__info {
+    font-size: 16px;
+    font-style: italic;
+    line-height: 21px;
+    color: #333;
+  }
+
+  &__icon {
+    position: absolute;
+    right: 25px;
+    top: 27px;
+  }
+
+  &__text {
+    margin-top: 24px;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+  }
+}

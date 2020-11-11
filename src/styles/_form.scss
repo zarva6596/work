@@ -1,0 +1,24 @@
+.form {
+  &__input {
+    background-color: #f4f6f0;
+    padding: 12px 0 12px 28px;
+    border-bottom: 1px solid #c4c4c4;
+    font-size: 16px;
+    line-height: 21px;
+    color: #797979;
+    margin-bottom: 10px;
+    position: relative;
+
+    &::before {
+      width: 15px;
+      height: 11px;
+      position: absolute;
+      left: 0;
+      top: 0;
+      content: "";
+      background-image: url("../images/icons/name.svg");
+      background-repeat: no-repeat;
+      background-position: center left;
+    }
+  }
+}

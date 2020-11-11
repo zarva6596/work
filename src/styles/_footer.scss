@@ -1,0 +1,147 @@
+// .footer {
+//   padding: 56px 175px 32px;
+//   background-color: #3e3e3e;
+
+//   &__top {
+//     display: flex;
+//     justify-content: space-between;
+//     align-items: flex-start;
+//   }
+
+//   &__text {
+//     margin-top: 37px;
+//     font-size: 18px;
+//     line-height: 26px;
+//     max-width: 405px;
+
+//     &--bold {
+//       font-weight: 400;
+//     }
+//   }
+
+//   &__contactBox {
+//     width: 1090px;
+//     display: flex;
+//     justify-content: space-between;
+//   }
+
+//   &__bottom {
+//     display: flex;
+//     justify-content: space-between;
+//     align-items: center;
+//     margin-top: 32px;
+
+//     &Text {
+//       font-size: 14px;
+//       line-height: 21px;
+//     }
+
+//     &Link {
+//       font-weight: 400;
+//       color: $red-color;
+//     }
+//   }
+// }
+
+// .contactBox {
+//   &__head {
+//     font-size: 24px;
+//     line-height: 36px;
+//     font-weight: 400;
+//     color: #7e7e7e;
+//   }
+
+//   &__text {
+//     font-size: 18px;
+//     line-height: 36px;
+//   }
+
+//   &__icon {
+//     margin-top: 5px;
+//   }
+
+//   &__link {
+//     position: relative;
+//     top: 10px;
+//   }
+
+//   &__link .icon:hover {
+//     fill: $red-color;
+//   }
+// }
+
+// @media (max-width: $maxWidth) {
+//   .footer {
+//     padding-left: 100px;
+//     padding-right: 100px;
+//   }
+// }
+
+// @media (max-width: $averageWidth) {
+//   .footer {
+//     padding-left: 75px;
+//     padding-right: 75px;
+//   }
+// }
+
+// @media (max-width: $smallWidth) {
+//   .footer {
+//     padding-left: 30px;
+//     padding-right: 30px;
+//   }
+// }
+
+// @media (max-width: $tablet) {
+//   .footer {
+//     &__top {
+//       flex-direction: column;
+//       align-items: center;
+//       text-align: center;
+//     }
+
+//     &__contactBox {
+//       max-width: 900px;
+//       margin-top: 30px;
+//       flex-wrap: wrap;
+//     }
+//   }
+// }
+
+// @media (max-width: $bigMobile) {
+//   .contactBox {
+//     width: 400px;
+
+//     &__item {
+//       margin-top: 30px 0;
+//     }
+//   }
+// }
+
+// @media (max-width: $averageMobile) {
+//   .contactBox {
+//     width: 200px;
+//   }
+
+//   .footer {
+//     &__bottomText {
+//       text-align: right;
+//     }
+//   }
+// }
+
+// @media (max-height: $horizontalMobileHeight) {
+//   .contactBox {
+//     &__head {
+//       font-size: 18px;
+//     }
+
+//     &__text {
+//       font-size: 14px;
+//       line-height: 1;
+//     }
+
+//     &__icon {
+//       height: 18px;
+//     }
+//   }
+// }

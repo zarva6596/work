@@ -1,0 +1,25 @@
+.services {
+  background-color: #f3f0eb;
+
+  &__list {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__item {
+    max-width: 260px;
+
+    &Heading {
+      font-size: 18px;
+      line-height: 27px;
+      margin: 17px 0 13px;
+      font-weight: bold;
+    }
+  }
+
+  &__text {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}

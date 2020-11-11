@@ -1,0 +1,27 @@
+.gallery {
+  &__slider {
+    display: flex;
+    margin-top: 67px;
+  }
+
+  &__photo {
+    width: calc((100vw - 390px) / 4);
+    border-radius: 5px;
+
+    &Block {
+      margin-bottom: 24px;
+
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+    }
+
+    &Box {
+      margin-right: 30px;
+
+      &:last-of-type {
+        margin-right: 0;
+      }
+    }
+  }
+}
