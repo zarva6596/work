@@ -30,4 +30,30 @@
   &__bold {
     font-weight: bold;
   }
+
+  &__slider {
+    display: none;
+  }
+}
+
+@media (max-width: 440px) {
+  .whyWe {
+    padding-right: 0;
+
+    &__list {
+      display: none;
+    }
+
+    &__slider {
+      margin-top: 36px;
+      display: block;
+    }
+
+    &__item {
+      width: 80vw;
+      margin-right: 20px;
+      padding-right: 40px;
+      border-color: #ffa234;
+    }
+  }
 }

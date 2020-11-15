@@ -3,6 +3,10 @@
   padding-bottom: 0;
   background-color: #f3f0eb;
 
+  &__heading--mobile {
+    display: none;
+  }
+
   &__list {
     margin-top: 76px;
     display: grid;
@@ -49,6 +53,9 @@
   &__button {
     position: absolute;
     bottom: 12px;
+    width: calc(100% - 12px);
+    background-color: #f3f0eb;
+    border-color: #f3f0eb;
   }
 
   &__bottom {
@@ -76,6 +83,68 @@
       text-align: center;
       padding: 36px 100px 84px;
       background-color: rgba(255, 255, 255, 0.25);
+    }
+  }
+
+  &__mobile {
+    display: none;
+  }
+}
+
+@media (max-width: 440px) {
+  .steps {
+    padding-bottom: 40px;
+
+    &__heading,
+    &__list,
+    &__bottom {
+      display: none;
+    }
+
+    &__heading--mobile {
+      display: block;
+      max-width: 50%;
+      margin-bottom: 20px;
+    }
+
+    &__mobile {
+      display: block;
+
+      &__item {
+        display: flex;
+        align-items: center;
+        margin-bottom: 18px;
+      }
+
+      &__left {
+        min-width: 49px;
+        font-size: 15px;
+        line-height: 21px;
+        text-align: center;
+        margin-right: 12px;
+      }
+
+      &__line {
+        height: 130px;
+        width: 7px;
+        background-color: #ffa234;
+        margin-right: 15px;
+
+        &--second {
+          height: 90px;
+          background-color: #dedfe1;
+        }
+      }
+
+      &__p {
+        font-size: 15px;
+        line-height: 21px;
+        margin-bottom: 6px;
+
+        &:last-of-type {
+          margin-bottom: 0;
+        }
+      }
     }
   }
 }

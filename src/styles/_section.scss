@@ -5,3 +5,9 @@
     position: relative;
   }
 }
+
+@media (max-width: 440px) {
+  .section {
+    padding: 36px 15px 37px;
+  }
+}

@@ -71,3 +71,18 @@
     }
   }
 }
+
+@media (max-width: 440px) {
+  .slick {
+    position: relative;
+
+    &-dots {
+      width: 100vw;
+      bottom: -20px;
+    }
+
+    &-arrow {
+      display: none;
+    }
+  }
+}

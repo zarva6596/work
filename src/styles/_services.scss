@@ -23,3 +23,9 @@
     line-height: 24px;
   }
 }
+
+@media (max-width: 440px) {
+  .services {
+    display: none;
+  }
+}

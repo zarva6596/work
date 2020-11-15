@@ -74,3 +74,35 @@
     }
   }
 }
+
+@media (max-width: 440px) {
+  .statistic {
+    flex-direction: column;
+
+    &__bg {
+      right: -30vw;
+    }
+
+    &__item {
+      justify-content: space-between;
+    }
+
+    &__text {
+      margin: 20px 0;
+      font-size: 15px;
+      line-height: 21px;
+    }
+
+    &__icon {
+      width: 15px;
+      height: 32px;
+      margin-right: 8px;
+    }
+
+    &__salary,
+    &__interest {
+      font-size: 15px;
+      line-height: 21px;
+    }
+  }
+}

@@ -4,6 +4,19 @@
   &__slider {
     margin-top: 60px;
     display: flex;
+
+    &2 {
+      margin-top: 60px;
+      display: flex;
+    }
+  }
+
+  &__heading {
+    &2 {
+      margin-top: 185px;
+      font-size: 27px;
+      font-weight: normal;
+    }
   }
 
   &__card {
@@ -18,16 +31,16 @@
 
   &__client {
     display: flex;
-
-    &Info {
-      position: relative;
-      top: 10px;
-    }
   }
 
   &__photo {
     border-radius: 5px;
     margin-right: 24px;
+    height: 100%;
+
+    &2 {
+      height: 48%;
+    }
   }
 
   &__name {
@@ -43,6 +56,11 @@
     color: #333;
   }
 
+  &__data {
+    font-style: normal;
+    font-family: "Cuprum", sans-serif;
+  }
+
   &__icon {
     position: absolute;
     right: 25px;
@@ -54,5 +72,53 @@
     font-size: 16px;
     line-height: 1.5;
     color: #333;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 433px;
+  }
+}
+
+@media (max-width: 440px) {
+  .reviews {
+    &__heading {
+      &2 {
+        margin-top: 70px;
+      }
+    }
+
+    &__slider {
+      margin-top: 36px;
+
+      &2 {
+        margin-top: 30px;
+      }
+    }
+
+    &__card {
+      padding-right: 14px;
+      padding-left: 16px;
+      height: fit-content;
+      width: calc(100vw - 30px);
+    }
+
+    &__item {
+      width: calc(100vw - 30px);
+    }
+
+    &__name,
+    &__info,
+    &__text {
+      font-size: 15px;
+      line-height: 20px;
+    }
+
+    &__icon {
+      height: 18px;
+      width: 18px;
+    }
   }
 }

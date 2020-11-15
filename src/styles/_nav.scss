@@ -12,6 +12,12 @@
   }
 
   &__link {
+    font-family: "Cuprum", sans-serif;
     text-transform: uppercase;
+    color: #797979;
+
+    &:hover {
+      color: #333;
+    }
   }
 }

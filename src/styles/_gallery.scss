@@ -1,4 +1,6 @@
 .gallery {
+  padding-right: 100px;
+
   &__slider {
     display: flex;
     margin-top: 67px;
@@ -23,5 +25,11 @@
         margin-right: 0;
       }
     }
+  }
+}
+
+@media (max-width: 440px) {
+  .gallery {
+    display: none;
   }
 }

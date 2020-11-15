@@ -50,6 +50,7 @@
   &__phone,
   &__email {
     color: #fff;
+    font-family: "Cuprum", sans-serif;
   }
 
   &__info {
@@ -57,7 +58,10 @@
   }
 
   &__heading {
+    z-index: 1;
+    font-family: "Cuprum", sans-serif;
     margin-bottom: 24px;
+    font-weight: bold;
     font-size: 38px;
     line-height: 48px;
     text-transform: uppercase;
@@ -72,6 +76,7 @@
     line-height: 160%;
     position: relative;
     left: 10px;
+    font-family: "PT Serif", serif;
 
     &::before {
       position: absolute;
@@ -86,6 +91,7 @@
   }
 
   &__button {
+    width: fit-content;
     padding: 25px 32px;
     background-color: #ffa234;
     color: #fff;
@@ -94,5 +100,58 @@
     font-weight: bold;
     box-shadow: 3px 3px 5px rgba(166, 180, 200, 0.1);
     border-radius: 5px;
+
+    &:hover {
+      background-color: #ff9c26;
+    }
+  }
+}
+
+@media (max-width: 440px) {
+  .header {
+    background-color: #f5f0eb;
+    background-image: url("../images/header/worker_mobile.png");
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: contain;
+    padding: 18px 15px 37px;
+    position: relative;
+
+    &__heading {
+      font-size: 27px;
+      line-height: 29px;
+      font-weight: bold;
+    }
+
+    &__worker {
+      display: none;
+    }
+
+    &__button {
+      position: absolute;
+      bottom: 90px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    &__info {
+      margin-top: 120px;
+    }
+
+    &__logo {
+      width: 60vw;
+    }
+
+    &__contact {
+      display: none;
+    }
+
+    &__nav {
+      display: none;
+    }
+
+    &__yellowBg {
+      display: none;
+    }
   }
 }
