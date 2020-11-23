@@ -9,8 +9,8 @@ script.defer = true;
 
 window.initMap = function() {
   const position1 = {
-    lat: 49.846797,
-    lng: 24.029588,
+    lat: 49.848981,
+    lng: 24.019519,
   };
 
   const map1 = new google.maps.Map(document.getElementById('map1'), {
@@ -778,7 +778,6 @@ $(document).ready(function() {
   });
 
   $('.whyWe__slider').slick({
-    dots: true,
     variableWidth: true,
     responsive: [
       {
@@ -810,11 +809,25 @@ $(document).ready(function() {
 
     $(document).on('click', '.vacancy__bottom', function(e) {
       e.preventDefault();
-      $('.vacancy__list').addClass('vacancy__list--active');
+      $('.vacancy__item').addClass('vacancy__item--active');
       $('.vacancy__bottom').addClass('vacancy__bottom--active');
       // $('.contacts__item2').removeClass('contacts__item--none');
       // $('#map1').addClass('contacts__map--none');
       // $('#map2').removeClass('contacts__map--none');
+    });
+
+    $(document).on('click', '.header__sendwich', function(e) {
+      e.preventDefault();
+      $('.nav').addClass('nav--active');
+    });
+
+    $(document).on('click', '.nav__close', function(e) {
+      e.preventDefault();
+      $('.nav').removeClass('nav--active');
+    });
+
+    $(document).on('click', '.nav__item', function(e) {
+      $('.nav').removeClass('nav--active');
     });
   });
 });

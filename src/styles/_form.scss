@@ -9,6 +9,14 @@
     line-height: 21px;
     color: #797979;
     margin-bottom: 10px;
+
+    &:focus {
+      border-color: #797979;
+
+      &:placeholder-shown {
+        color: #363636;
+      }
+    }
   }
 
   &__nameL,

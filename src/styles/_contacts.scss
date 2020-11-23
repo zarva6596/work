@@ -1,4 +1,6 @@
 .contacts {
+  position: relative;
+
   &__box {
     margin-top: 60px;
     display: flex;
@@ -67,6 +69,22 @@
   &__address {
     margin-top: 18px;
     margin-bottom: 12px;
+  }
+
+  &__icons {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    right: 126px;
+    bottom: 144px;
+  }
+
+  &__icon {
+    margin-bottom: 12px;
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
   }
 }
 

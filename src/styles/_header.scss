@@ -105,6 +105,12 @@
       background-color: #ff9c26;
     }
   }
+
+  &__mobileBottom,
+  &__mobileTop,
+  &__sendwich {
+    display: none;
+  }
 }
 
 @media (max-width: 440px) {
@@ -116,6 +122,19 @@
     background-size: contain;
     padding: 18px 15px 37px;
     position: relative;
+
+    &__mobileTop {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100vw;
+      padding: 18px 20px 12px;
+      border-bottom: 1px solid #c4c4c4;
+    }
+
+    &__top {
+      align-items: center;
+    }
 
     &__heading {
       font-size: 27px;
@@ -142,12 +161,26 @@
       width: 60vw;
     }
 
+    &__sendwich {
+      display: block;
+    }
+
+    &__mobileBottom {
+      z-index: 1;
+      display: flex;
+      justify-content: space-evenly;
+      width: 100vw;
+      position: absolute;
+      bottom: 37px;
+      left: 0;
+    }
+
     &__contact {
       display: none;
     }
 
     &__nav {
-      display: none;
+      position: absolute;
     }
 
     &__yellowBg {

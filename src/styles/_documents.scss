@@ -1,0 +1,19 @@
+.documents {
+  display: none;
+}
+
+@media (max-width: 440px) {
+  .documents {
+    display: block;
+
+    &__text {
+      margin: 21px 0 11px;
+      font-size: 15px;
+      line-height: 21px;
+
+      &:last-of-type {
+        margin: 0;
+      }
+    }
+  }
+}

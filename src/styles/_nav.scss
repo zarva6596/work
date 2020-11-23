@@ -21,3 +21,31 @@
     }
   }
 }
+
+@media (max-width: 440px) {
+  .nav {
+    left: 0;
+    top: 0;
+    height: 100%;
+    z-index: 1;
+    background-color: #fff;
+    transform: translateX(-100%);
+    transition: all 0.5s;
+
+    &--active {
+      transform: translateX(0%);
+    }
+
+    &__list {
+      margin-top: 25px;
+      flex-direction: column;
+    }
+
+    &__item {
+      margin-left: 10vw;
+      width: 80vw;
+      padding: 15px 0;
+      border-bottom: 1px solid #c4c4c4;
+    }
+  }
+}
